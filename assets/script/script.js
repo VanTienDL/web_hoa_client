@@ -2,7 +2,7 @@ async function searchFlower() {
     let id = document.getElementById("flowerName").value;  // Lấy ID nhập vào
 
     try {
-        let response = await fetch(`https://smart-starlene-phuongdinh-f2ad82cf.koyeb.app/api/flower?id=${id}`);
+        let response = await fetch(`https://zeroth-rori-phuongdinh-58a55705.koyeb.app/api/flower?id=${id}`);
         let data = await response.json();
 
         let resultName = document.getElementById("result-name");
