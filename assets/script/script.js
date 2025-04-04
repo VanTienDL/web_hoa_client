@@ -23,3 +23,21 @@ async function searchFlower() {
         console.error("Error fetching flower:", error);
     }
 }
+async function multiplyNumber() {
+    let num = document.getElementById("multiplyNumber").value;
+
+    if (num <= 0 || isNaN(num)) {
+        document.getElementById("multiply-result").textContent = "Please enter a positive number!";
+        return;
+    }
+
+    try {
+        let response = await fetch(`https://smart-starlene-phuongdinh-f2ad82cf.koyeb.app/api/multiply?num=${num}`);
+        let data = await response.json();
+
+        document.getElementById("multiply-result").textContent = `Result: ${data.result}`;
+    } catch (error) {
+        console.error("Error fetching multiplication result:", error);
+    }
+}
+
