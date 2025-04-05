@@ -32,7 +32,7 @@ async function multiplyNumber() {
     }
 
     try {
-        let response = await fetch(`https://smart-starlene-phuongdinh-f2ad82cf.koyeb.app/api/multiply?num=${num}`);
+        let response = await fetch(`https://zeroth-rori-phuongdinh-58a55705.koyeb.app/api/multiply?num=${num}`);
         let data = await response.json();
 
         document.getElementById("multiply-result").textContent = `Result: ${data.result}`;
