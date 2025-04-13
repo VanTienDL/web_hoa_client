@@ -100,7 +100,7 @@
                 <span>ABCDEF</span>
                 <p>I was blown away by the beauty and freshness of the flowers.</p>
                 <div class="price inner_wrap">
-                    <qp>$50</qp>
+                    <p>$50</p>
                     <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
@@ -120,25 +120,29 @@
 
 
 
-
-    <h1>Search for a Flower</h1>
-    <input type="text" id="flowerName" placeholder="Enter flower name">
-    <button onclick="searchFlower()">Search</button>
-    <div id="result">
-        <h2 id="result-name"></h2>
-        <img id="result-image" src="">
-        <p id="result-text" color="red"></p>
+    <div class="search inner_wrap" >
+        <h1 style="text-align: center;">Nhập số từ 1-50 để biết ý nghĩa một loài hoa nhé!</h1>
+        <div class="inner_wrap">
+            <input type="text" id="flowerName" placeholder="Một số từ 1 đến 50">
+            <button class="btn" onclick="searchFlower()">Xem ý nghĩa</button>
+        </div>
+        <div id="result" class="result">
+            <h2 id="result-name"></h2>
+            <img id="result-image" src="">
+            <p id="result-text" class="result-text"color="red"></p>
+        </div>
     </div>
-    <h1>Multiply a Number</h1>
-    <input type="number" id="multiplyNumber" placeholder="Enter a number">
-    <button onclick="multiplyNumber()">Multiply</button>
 
-    <div id="result">
-        <h2 id="result-name"></h2>
-        <img id="result-image" src="">
-        <p id="result-text"></p>
+    <div class="mul inner_wrap">
+        <h1 style="text-align: center;">Hoa đồng giá từ thiện đồng giá 50k</h1>
+        <div class="inner_wrap">
+            <input type="number" id="multiplyNumber" placeholder="Số lượng mua">
+            <button class="btn" onclick="multiplyNumber()">Quyên góp</button>
+        </div>
+        <div id="multiply-result" class="result-text" style="text-align: center; padding:14px 0px"></div>
     </div>
-    <div id="multiply-result" style="font-size: 25px;"></div>
+
+
     <footer class="inner_wrap">
         <p class="fquote">
             "Cảm ơn bạn đã ghé thăm khu vườn hoa nhỏ bé này! Chúc bạn luôn rực rỡ như những đóa hoa xinh đẹp nhất!🌸"

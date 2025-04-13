@@ -27,7 +27,7 @@ async function multiplyNumber() {
     let num = document.getElementById("multiplyNumber").value;
 
     if (num <= 0 || isNaN(num)) {
-        document.getElementById("multiply-result").textContent = "Please enter a positive number!";
+        document.getElementById("multiply-result").textContent = "Xin hãy nhập số không âm!";
         return;
     }
 
@@ -35,7 +35,7 @@ async function multiplyNumber() {
         let response = await fetch(`https://zeroth-rori-phuongdinh-58a55705.koyeb.app/api/multiply?num=${num}`);
         let data = await response.json();
 
-        document.getElementById("multiply-result").textContent = `Result: ${data.result}`;
+        document.getElementById("multiply-result").textContent = `Thành Tiền: ${data.result}k`;
     } catch (error) {
         console.error("Error fetching multiplication result:", error);
     }

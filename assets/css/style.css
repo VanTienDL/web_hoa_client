@@ -133,12 +133,13 @@
     flex-direction: column;
     width:30%;
     border-radius: 30px;
-    background-color: #3d242c;
+    background-color: #B0DCE8;
     height: 550px;
     padding: 20px;
     margin: 20px calc(10% / 6);
 }
 .sp span{
+    color:red;
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -147,6 +148,40 @@
 }
 .price p, .price a{
     font-size: 36px;
+}
+
+.search , .mul{
+    flex-direction: column;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:40px 20px;
+}
+.result *{
+    padding: 10px 0px;
+    font-size: 40px;
+    text-align: justify;
+}
+.search h1, .mul h1{
+    text-align: justify;
+}
+.result-text{
+    font-size:25px;
+}
+.search .inner_wrap, .mul .inner_wrap{
+    justify-content: center;
+    margin-top: 10px;
+}
+.inner_wrap input{
+    border-radius: 45px 0px 0px 45px;
+    text-align: center;
+    font-size:22px;
+    padding: 13px 0px;
+}
+.search .btn, .mul .btn{
+    border-radius: 0px 45px 45px 0px;
 }
 
 
